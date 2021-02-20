@@ -13,7 +13,6 @@ $factory->define(Book::class, function (Faker $faker) {
     'category_id' => rand(1, 20),
     'name' => $title,
     'description' => $faker->text(800),
-    'slug' => Str::slug($title),
     'ISBN' => $faker->isbn10,
     'author' => $faker->name,
     'editorial' => $faker->sentence(2),

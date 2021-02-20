@@ -9,3 +9,5 @@ use Illuminate\Http\Request;
 /*Route::resource('categories', 'Api\CategoryController')->except(['create', 'edit']);*/
 
 Route::apiResource('books', 'Api\BookController');
+Route::apiResource('categories', 'Api\CategoryController')->except(['index', 'show']);
+Route::apiResource('books.categories', 'Api\BookCategoryController')->except(['show']);

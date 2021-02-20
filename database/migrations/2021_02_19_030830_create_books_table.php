@@ -14,7 +14,6 @@ class CreateBooksTable extends Migration{
 
         $table->string('name');
         $table->text('description');
-        $table->string('slug');
         $table->string('ISBN')->unique(); //constraint de SQL
         $table->string('author');
         $table->string('editorial');
